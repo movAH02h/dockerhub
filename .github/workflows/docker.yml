@@ -24,7 +24,7 @@ jobs:
             password: ${{ secrets.PASSWORD_FOR_DOCKERHUB }}
 
       - name: Last action - build and download image to dockerhub
-        run: |
+        run: | 
           docker build -t ${{ secrets.USERNAME_FOR_DOCKERHUB }}/dockerhub:latest
           docker push ${{ secrets.PASSWORD_FOR_DOCKERHUB }}/dockerhub:latest
 
