@@ -1,0 +1,6 @@
+version: '3.8'
+
+services:
+  elevator:
+    build: src/
+    tty: true
