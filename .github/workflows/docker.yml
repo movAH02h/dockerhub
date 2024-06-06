@@ -25,6 +25,6 @@ jobs:
 
       - name: Last action - build and download image to dockerhub
         run: | 
-          docker build -t ${{ secrets.USERNAME_FOR_DOCKERHUB }}/dockerhub:latest
+          docker build -t ${{ secrets.USERNAME_FOR_DOCKERHUB }}/dockerhub:latest .
           docker push ${{ secrets.USERNAME_FOR_DOCKERHUB }}/dockerhub:latest
 
