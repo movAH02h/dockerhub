@@ -21,7 +21,7 @@ jobs:
         uses: docker/login-action@v2
         with:
             username: ${{ secrets.USERNAME_FOR_DOCKERHUB }}
-            password: ${{ secretes.PASSWORD_FOR_DOCKERHUB }}
+            password: ${{ secrets.PASSWORD_FOR_DOCKERHUB }}
 
       - name: Last action - build and download image to dockerhub
         run: |
